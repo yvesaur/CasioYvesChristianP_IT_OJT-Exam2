@@ -14,10 +14,9 @@ A sleek and modern website design developed using React, TypeScript, and Tailwin
 
 # Live Demo
 
-The demo is hosted using AWS Amplify: (under maintenance...)
+The demo is hosted using AWS Amplify: <a href="https://main.d3f6j4k51i82cf.amplifyapp.com/">News Article Viewer</a>
 <br>
-
-<!-- <img src="./screenshots/2023-08-09 05_28_01-.png" alt="Screenshot"> -->
+<img src="./screenshot/screenshot-output.png" alt="Screenshot">
 
 ## Functionalities
 
