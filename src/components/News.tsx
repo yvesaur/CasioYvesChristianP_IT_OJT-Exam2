@@ -87,7 +87,7 @@ const News: React.FC<newsDummyData> = ({ data }) => {
               type="checkbox"
               name="selectAll"
               id=""
-              checked={selectAllChecked}
+              defaultChecked={selectAllChecked}
               onClick={handleSelectAllClick}
             />
             <button className="p-1 rounded-lg border-2 border-blue-400 bg-blue-200 text-blue-500 w-20">
@@ -129,7 +129,7 @@ const News: React.FC<newsDummyData> = ({ data }) => {
                   type="checkbox"
                   name=""
                   id=""
-                  checked={deleteSelectedNews[index]}
+                  defaultChecked={deleteSelectedNews[index]}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleDeleteCheckboxClick(index);
@@ -156,7 +156,7 @@ const News: React.FC<newsDummyData> = ({ data }) => {
                   <span className="flex items-center text-blue-600">
                     {" "}
                     <AiFillEye />{" "}
-                    <p className="min-w-max cursor-pointer"> Read Full</p>
+                    <span className="min-w-max cursor-pointer"> Read Full</span>
                   </span>
                 </p>
               </div>
