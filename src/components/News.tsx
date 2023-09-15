@@ -87,8 +87,8 @@ const News: React.FC<newsDummyData> = ({ data }) => {
               type="checkbox"
               name="selectAll"
               id=""
-              defaultChecked={selectAllChecked}
-              onClick={handleSelectAllClick}
+              checked={selectAllChecked}
+              onChange={handleSelectAllClick}
             />
             <button className="p-1 rounded-lg border-2 border-blue-400 bg-blue-200 text-blue-500 w-20">
               Publish
@@ -129,10 +129,12 @@ const News: React.FC<newsDummyData> = ({ data }) => {
                   type="checkbox"
                   name=""
                   id=""
-                  defaultChecked={deleteSelectedNews[index]}
+                  checked={deleteSelectedNews[index]}
+                  onChange={() => {
+                    handleDeleteCheckboxClick(index);
+                  }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleDeleteCheckboxClick(index);
                   }}
                 />
               </div>
